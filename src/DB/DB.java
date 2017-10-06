@@ -17,12 +17,12 @@ import java.util.logging.Logger;
  */
 public class DB {
     //Connection string je u formatu: jdbc:sqlserver://[serverName[\instanceName][:portNumber]][;property=value[;property=value]]
-    private static String serverName = "localhost";
+    private static String serverName = "servername";
     private static String instanceName = "MSSQLSERVER";
     private static int portNumber = 1433;
     private static String database = "GradjevinskaFirma";
-    private static String username = "sa";
-    private static String password = "sifra";
+    private static String username = "user";
+    private static String password = "pass";
     private static String connectionString = "jdbc:sqlserver://" + serverName + "\\" + instanceName + ":" + portNumber + ";databaseName=" + database + ";username=" + username + ";password=" + password;
     
     public static Connection connection;
